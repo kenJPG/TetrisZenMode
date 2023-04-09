@@ -46,7 +46,14 @@ class MainApp(ct.CTk):
 		self.coords[2] *= 1920
 		self.coords[1] *= 1080
 		self.coords[3] *= 1080
+
 		self.coords = self.coords.tolist()
+
+		img = ImageGrab.grab(bbox = self.coords)
+		img = cv2.cvtColor(np.array(img), cv2.COLOR_BGR2RGB)
+		for dy in range(int(self.coords[1]), int(self.coords[1]) + 20):
+			for dx in range(int(self.coords[0]), int(self.coords[0]) + 20):
+				print(img[dy][dx])
 		self.abs_c = [None, None, None, None]
 		self.capturing = [False]
 
