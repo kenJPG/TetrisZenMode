@@ -1,0 +1,1 @@
+{"leveling":"off","spins":"T-spins","combotable":"multiplier","kickset":"SRS+","stride":"on","gravitymode":"relaxed","gravitystatic":20,"counters":"off","garbagemode":"off","cheeselayer_height":6,"cheesetimer_interval":4,"cheesemessiness":100}
